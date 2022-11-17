@@ -1,0 +1,34 @@
+{
+	"name": "armgem/gem-support",
+	"description": "Additions for laravel support",
+	"keywords": ["laravel", "support", "gem"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Davit Zeynalyan",
+			"email": "davitzeynalyan@laravel-helper.com",
+			"role": "developer"
+		}
+	],
+	"require": {
+        "php": "8.*",
+		"laravel/framework": "9.*"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"GemSupport\\Providers\\GemSupportServiceProvider"
+			],
+            "aliases": {
+                "GemDB": "GemSupport\\Facades\\GemDB",
+                "GemStr": "GemSupport\\Facades\\GemStr",
+                "GemArr": "GemSupport\\Facades\\GemArr"
+            }
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"GemSupport\\": "src/"
+		}
+	}
+}
