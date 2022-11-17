@@ -21,8 +21,8 @@
 			],
             "aliases": {
                 "GemDB": "GemSupport\\Facades\\GemDB",
-                "GemStr": "GemSupport\\Facades\\GemStr",
-                "GemArr": "GemSupport\\Facades\\GemArr"
+                "GemStr": "GemSupport\\GemStr",
+                "GemArr": "GemSupport\\GemArr"
             }
 		}
 	},
