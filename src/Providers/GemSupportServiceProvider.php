@@ -22,7 +22,7 @@ class GemSupportServiceProvider extends CoreGemServiceProvider
     public function register()
     {
         $this->registerSingletons([
-            'game-db' => GemDB::class,
+            'gem-db' => GemDB::class,
         ]);
     }
 }

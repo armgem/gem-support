@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static Collection getTableColumnsInfo(string $table)
  * @method static Collection getDBStructure()
  */
-class GameDB extends Facade
+class GemDB extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -23,6 +23,6 @@ class GameDB extends Facade
      */
     protected static function getFacadeAccessor(): string
     {
-        return 'game-db';
+        return 'gem-db';
     }
 }
