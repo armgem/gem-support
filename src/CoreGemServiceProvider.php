@@ -188,7 +188,9 @@ class CoreGemServiceProvider extends ServiceProvider
     private function detectPackageRootPath(string $callPath = ''): string
     {
         if (empty($callPath)) {
-            $callPath = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 1)[0]['file'];
+            $reflector = new \ReflectionClass($this);
+            $fn = $reflector->getFileName();
+            $callPath = dirname($fn);
         }
 
         return Str::before($callPath, 'src');
