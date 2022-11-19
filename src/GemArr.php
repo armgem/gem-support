@@ -17,7 +17,7 @@ class GemArr extends Arr
     public static function implodeWrap(array $data, string $before, ? string $after = null): string
     {
         $after = $after ?? $before;
-        return $before . implode($after . $before, $data) . $before;
+        return $before . implode($after . $before, $data) . $after;
     }
 
     /**
